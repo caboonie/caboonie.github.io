@@ -18,8 +18,14 @@ function setupOptionTypes() {
         element.data("type",type);
         element.html(type)
         element.addClass(type);
-        container.append(element)
+        container.append(element);
+        element.draggable({
+            helper: "clone",
+            cursor: 'move',
+            zIndex: 10,
+          });
     }
+    
 }
 
 function initialSetup() {
