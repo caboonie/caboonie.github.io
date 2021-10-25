@@ -13,7 +13,7 @@ function resizeCanvas() {
 
 function setupOptionTypes() {
     const container = $("#instructions");
-    for (type of TYPE_OPTIONS) {
+    for (let type of TYPE_OPTIONS) {
         const element = $(TYPE_TEMPLATE);
         element.data("type",type);
         element.html(type)
