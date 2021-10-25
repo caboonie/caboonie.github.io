@@ -5,7 +5,7 @@ initialSetup();
 
 DROPZONE.droppable({
     drop: function(event, ui) {
-      
+      console.log("dropping on DROPZONE");
       if (!ui.draggable.hasClass('object')) {
         itemCount++;
         var element = ui.helper.clone();
