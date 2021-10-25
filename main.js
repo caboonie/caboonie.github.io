@@ -23,7 +23,8 @@ DROPZONE.droppable({
 
   function setupElement(element, canElOff, value = null, lines_to_make = null) {
     if (element.hasClass("function")) {
-      functionSetup(element, value, lines_to_make);
+        console.log("calling setup function, element", element);
+        functionSetup(element, value, lines_to_make);
     }
 
     // set position to be entirely inside of the DROPZONE
@@ -39,9 +40,8 @@ DROPZONE.droppable({
       cursor: 'move',
       containment: '#dropzone-background',
       drag: function(event, ui) {
-        if (isDown)
-          return false;
-        redrawStoredLines();
+        if (!isDown) 
+            redrawStoredLines();
         }
     });
   }
