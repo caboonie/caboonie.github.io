@@ -26,3 +26,5 @@ function initialSetup() {
     resizeCanvas();
     setupOptionTypes();
 }
+
+export {initialSetup}
