@@ -3,14 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>Basic JavaScript module example</title>
-    <style>
-      canvas {
-        border: 1px solid black;
-      }
-    </style>
-    <script type="module" src="main.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JQuery libraries -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    
   </head>
   <body>
 
+    <div id = "instructions">
+      <div id="frame-names"></div>
+    
+    </div>
+
+    <div id="dropzone" class="ui-widget-header">
+      <div id="dropzone-background">
+        <canvas id="canvas" class="overlay"></canvas>
+        <div id="trash"></div>
+      </div>
+    </div>
+
+    <button id="toJson">toJson</button>
+    <div id="json-container"></div>
+    <div id="warnings" style="color:red;"></div>
+
   </body>
+
+  <!-- Drag-drop functionality -->
+  <script type="module" src="main.js"></script>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
 </html>
