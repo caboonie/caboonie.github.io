@@ -1,0 +1,149 @@
+.box {
+  background: white;
+  border: 1px solid darkgray;
+  border-radius: 4px;
+  padding: 5px;
+  cursor: move;
+}
+
+#instructions{
+  width: 500px;
+  float: left;
+}
+
+.hidden {
+  display: none;
+}
+
+.lineActive:hover {
+  font-size: large;
+  font-weight: bold;
+}
+
+.set-add {
+  width: 75px;
+  height: 100px;
+  margin: 3px;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+}
+
+.draggable {
+  padding: 10px;
+  float: left;
+  margin: 10px 10px 10px 0;
+  cursor: move;
+}
+
+#trash {
+  width: 33%;
+  height: 100%;
+  background-color: lightblue;
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+
+/* #trash:hover{
+  border: 3px solid black;
+} */
+
+.droppable-over {
+  border: 3px solid black;
+}
+
+#dropzone {
+  width: 600px;
+  height: 600px;
+  padding: 0.5em;
+  float: left;
+  margin: 10px;
+  position: relative;
+  background-color: lightgray;
+  border: 1px solid darkgray;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+#dropzone-background {
+  width:150%;
+  margin-left: 0px;
+  position: relative;
+}
+
+
+.dot {
+  background-color: #bbb;
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+}
+
+.activeElement{
+  font-weight: bold;
+}
+
+.remove {
+  color: gray;
+}
+
+.removeActive {
+  color: black;
+  cursor: pointer;
+}
+
+.line {
+  color: gray;
+}
+
+.lineActive {
+  color: black;
+  cursor: pointer;
+}
+
+.overlay {
+  overflow: visible;
+  pointer-events: none;
+  background: none !important;
+  z-index: 20;
+  position: relative;
+}
+
+.highlight {
+  font-weight: bold;
+  border: solid black 1px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.inactive {
+  cursor: move;
+  color: gray;
+  border-color: gray;
+}
+
+.listCell {
+  padding: 0 6px;
+}
+
+input {
+  width: auto;
+  font-family: serif;
+}
+
+canvas {
+  border: 1px solid red;
+}
+
+.grid tr td {
+  border: solid black 1px;
+  margin: 0px;
+}
+
+.grid {
+  border-collapse: collapse;
+  display: inline;
+}

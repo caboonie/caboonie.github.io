@@ -23,7 +23,7 @@ function setupOptionTypes() {
             helper: "clone",
             cursor: 'move',
             zIndex: 10,
-          });
+        });
     }
     
 }
